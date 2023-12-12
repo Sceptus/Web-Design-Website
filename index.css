@@ -1,0 +1,115 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: white;
+}
+
+.header {
+  background-color: black;
+  padding: 10px;
+  margin: -10px;
+  height: 110px;
+  color: white;
+  width: 100%;
+}
+
+a.headerLink {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  /* background-color: rgb(36, 36, 36); */
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 75%;
+}
+
+td.musicAlbum,
+th.musicAlbum {
+  border: 1px solid rgb(220, 220, 220);
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(220, 220, 220);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 10px 9px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+
+.dropdownContent a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdown:hover .dropdownButton {
+  background-color: rgb(50, 50, 50);
+}
+
+.cloneHeader {
+  background-color: rgb(22, 22, 22);
+  padding: 13px 30px;
+  margin: -9px;
+  text-align: center;
+  width: auto;
+}
+
+.cloneLink {
+  padding-right: 30px;
+  color: rgb(210, 210, 210);
+  font-family: sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+a.cloneLink:hover {
+  color: white;
+}
+
+.cloneBody {
+  margin: 9px -8px;
+  width: auto;
+}
+
+.heading {
+  display: block;
+}
+
+.quadraticInput {
+  width: 40px;
+}
