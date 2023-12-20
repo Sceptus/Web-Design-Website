@@ -1,16 +1,27 @@
-<?php
-    require("db_info.php");
+<html>
+    <head>
+        <title>mySQL</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <?php
+            require("db_info.php");
 
-    $connect = mysqli_connect($server, $username, $password, $db);
+            $connect = mysqli_connect($server, $username, $password, $db);
 
-    if(!$connect) {
-        die("Connection to database failed!");
-    }
+            if(!$connect) {
+                die("Connection to database failed!");
+            }
 
-    $query = "SELECT food FROM favoriteFoods ORDER BY id ASC";
-    $result = mysqli_query($connect, $query);
+            $query = "SELECT * FROM contacts ORDER BY lastName ASC";
+            $result = mysqli_query($connect, $query);
 
-    while($row = msqli_fetch_assoc($result)) {
-        echo $row["food"]."<br />";
-    }
-?>
+            while($row = mysqli_fetch_assoc($result)) {
+                echo $row["firstName"] ." ". $row["lastName"] ."&nbsp;&nbsp;&nbsp;&nbsp;". $row["email"] . 
+                "&nbsp;<a href=\"delete.php?id=". $row["id"] ."\">Delete</a> <br /><br />";
+            }
+        ?>
+
+        <a href="create.php">Add Contact</a>
+    </body>
+</html>

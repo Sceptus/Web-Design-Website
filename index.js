@@ -1,5 +1,5 @@
 const homeButton = document.getElementById("homeButton");
-const imageMapButton = document.getElementById("imageMapButton");
+const mySQLButton = document.getElementById("mySQLButton");
 const musicAlbumButton = document.getElementById("musicAlbumButton");
 const inputFormButton = document.getElementById("inputFormButton");
 const webCloneButton = document.getElementById("webCloneButton");
@@ -11,7 +11,7 @@ const phpLoginButton = document.getElementById("phpLoginButton");
 
 const headerButtons = [
   homeButton,
-  imageMapButton,
+  mySQLButton,
   musicAlbumButton,
   inputFormButton,
   webCloneButton,
