@@ -18,7 +18,8 @@
 
             while($row = mysqli_fetch_assoc($result)) {
                 echo $row["firstName"] ." ". $row["lastName"] ."&nbsp;&nbsp;&nbsp;&nbsp;". $row["email"] . 
-                "&nbsp;<a href=\"delete.php?id=". $row["id"] ."\">Delete</a> <br /><br />";
+                "&nbsp;<a href=\"edit.php?id=". $row["id"] ."\">Edit</a> 
+                &nbsp;<a href=\"delete.php?id=". $row["id"] ."\">Delete</a> <br /><br />";
             }
         ?>
 
