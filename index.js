@@ -1,7 +1,7 @@
 const homeButton = document.getElementById("homeButton");
 const mySQLButton = document.getElementById("mySQLButton");
 const musicAlbumButton = document.getElementById("musicAlbumButton");
-const inputFormButton = document.getElementById("inputFormButton");
+const pollsButton = document.getElementById("pollsButton");
 const webCloneButton = document.getElementById("webCloneButton");
 const javascriptButton = document.getElementById("javascriptButton");
 const phpButton = document.getElementById("phpButton");
@@ -13,7 +13,7 @@ const headerButtons = [
   homeButton,
   mySQLButton,
   musicAlbumButton,
-  inputFormButton,
+  pollsButton,
   webCloneButton,
   javascriptButton,
   phpButton,

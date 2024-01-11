@@ -81,6 +81,52 @@ tr:nth-child(2n) {
   background-color: rgb(50, 50, 50);
 }
 
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dropdown1Content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.dropdown1Content a {
+  color: black;
+  padding: 10px 9px;
+  text-decoration: none;
+  display: block;
+  border-radius: 5px;
+}
+
+.dropdown1Content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown1:hover .dropdown1Content {
+  display: block;
+}
+
+.dropdown1Button {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.dropdown1:hover .dropdown1Button {
+  background-color: rgb(50, 50, 50);
+}
+
 .cloneHeader {
   background-color: rgb(22, 22, 22);
   padding: 13px 30px;

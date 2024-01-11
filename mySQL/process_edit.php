@@ -11,7 +11,7 @@
 	$query = "UPDATE contacts SET firstName = '$firstName', lastName = '$lastName', email = '$email' WHERE id = '$id'";
 	
 	if(mysqli_query($connect, $query))
-		echo "Updated Successfully";
+		echo "Updated successfully";
 	else
 		echo "ERROR";
 ?>
