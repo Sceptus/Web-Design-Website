@@ -8,6 +8,8 @@
 <body>
     <h1>Polls</h1>
     <a href="checkpoint-1">Checkpoint #1</a> <br /><br />
-    <a href="checkpoint-2">Checkpoint #2</a>
+    <a href="checkpoint-2">Checkpoint #2</a> <br /><br />
+    <a href="checkpoint-3">Checkpoint #3</a> <br /><br />
+    <a href="checkpoint-4">Checkpoint #4</a>
 </body>
 </html>
