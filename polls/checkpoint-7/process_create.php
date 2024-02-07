@@ -15,11 +15,17 @@
             die("Connection to database failed!");
         }        
 
-        $pollQuestion = $_POST["pollQuestion"];
-        $pollResponse1 = $_POST["pollResponse1"];
-        $pollResponse2 = $_POST["pollResponse2"];
-        $pollResponse3 = $_POST["pollResponse3"];
-        $pollResponse4 = $_POST["pollResponse4"];
+        $pollQuestion = trim($_POST["pollQuestion"]);
+        $pollResponse1 = trim($_POST["pollResponse1"]);
+        $pollResponse2 = trim($_POST["pollResponse2"]);
+        $pollResponse3 = trim($_POST["pollResponse3"]);
+        $pollResponse4 = trim($_POST["pollResponse4"]);
+
+        if(empty($pollQuestion) || empty($pollResponse1) || empty($pollResponse2)) {
+            echo "ERROR: The poll must contain atleast two responses, and a question!";
+            echo "<meta http-equiv=\"refresh\" content=\"3; URL='//mthscs.net/vsenthil/polls/checkpoint-7/create.php'\">";
+            exit();
+        }
 
         $query = "INSERT INTO poll (poll_question, poll_response1, poll_response2, poll_response3, poll_response4) VALUES ('$pollQuestion', '$pollResponse1', '$pollResponse2', '$pollResponse3', '$pollResponse4')";
 
@@ -31,6 +37,6 @@
         }
     ?>
 
-    <meta http-equiv="refresh" content="2; URL='//mthscs.net/vsenthil/polls/checkpoint-4'">
+    <meta http-equiv="refresh" content="2; URL='//mthscs.net/vsenthil/polls/checkpoint-7'">
 </body>
 </html>
